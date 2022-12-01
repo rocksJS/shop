@@ -4,6 +4,8 @@ import { MainRoutingModule } from './main-routing.module';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NewsSubscribitionComponent } from './components/news-subscribition/news-subscribition.component';
 import { MatIconModule } from '@angular/material';
+import { CommonModule } from '@angular/common';
+import { TranslateSelectorComponent } from 'src/app/shared/components/translate-selector/translate-selector.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +13,11 @@ import { MatIconModule } from '@angular/material';
     HeaderComponent,
     NewsSubscribitionComponent,
   ],
-  imports: [MainRoutingModule, MatIconModule],
+  imports: [
+    MainRoutingModule,
+    MatIconModule,
+    CommonModule,
+    TranslateSelectorComponent,
+  ],
 })
 export class MainModule {}
