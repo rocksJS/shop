@@ -1,0 +1,41 @@
+:host {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  display: block;
+  height: 200px;
+
+  &-options {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    &-login {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  &-links {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &-logo {
+      max-width: 200px;
+    }
+  }
+}
