@@ -18,9 +18,10 @@
         src="../../../../../assets/imgs/logo/logo.jpg"
         alt=""
       />
-      <p>SHOP</p>
-      <p>INFO</p>
-      <p>GALLERY</p>
+      <a [routerLink]="'/'">SHOP</a>
+
+      <a [routerLink]="infoPath.path">INFO</a>
+      <a [routerLink]="galleryPath.path">GALLERY</a>
     </div>
   </nav>
 </div>
