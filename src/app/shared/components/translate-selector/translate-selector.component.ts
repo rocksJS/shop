@@ -13,7 +13,7 @@ import { LanguageValues } from '../../interfaces/language-values.interface';
   standalone: true,
 })
 export class TranslateSelectorComponent implements OnInit {
-  public foods: LanguageValues[] = [
+  public languages: LanguageValues[] = [
     { value: 'Russian', viewValue: 'RU' },
     { value: 'English', viewValue: 'EN' },
   ];

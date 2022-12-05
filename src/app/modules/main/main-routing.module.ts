@@ -31,6 +31,14 @@ const routes: Routes = [
             (module) => module.GalleryModule
           ),
       },
+      {
+        path: PRODUCT_PATH.path,
+        loadChildren: () =>
+          import('../opened-product/opened-product.module').then(
+            (module) => module.OpenedProductModule
+          ),
+      },
+      { path: '**', redirectTo: '/' },
     ],
   },
 ];

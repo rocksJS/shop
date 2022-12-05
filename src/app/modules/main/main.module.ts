@@ -6,6 +6,7 @@ import { NewsSubscribitionComponent } from './components/news-subscribition/news
 import { MatIconModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 import { TranslateSelectorComponent } from 'src/app/shared/components/translate-selector/translate-selector.component';
+import { ProductsApiService } from 'src/app/shared/services/api/productsApiService';
 
 @NgModule({
   declarations: [
@@ -19,5 +20,6 @@ import { TranslateSelectorComponent } from 'src/app/shared/components/translate-
     CommonModule,
     TranslateSelectorComponent,
   ],
+  providers: [ProductsApiService],
 })
 export class MainModule {}
