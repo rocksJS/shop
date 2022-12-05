@@ -1,14 +1,4 @@
-<div class="translate">
-  <img
-    class="translate-icon"
-    src="../../../../assets/imgs/languages/russia.png"
-    alt=""
-  />
-  <mat-form-field appearance="fill">
-    <mat-select>
-      <mat-option *ngFor="let language of languages" [value]="language.value">
-        {{ language.viewValue }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
+<mat-select-icon
+  [icons]="languages"
+  (onIconSelected)="onIconSelected($event)"
+></mat-select-icon>
