@@ -16,7 +16,16 @@ export class ProductsListPageComponent implements OnInit {
   ngOnInit(): void {
     this.productsApiService
       .getProducts()
-      .pipe(map((product) => Object.values(product)))
+      .pipe(
+        map((product) => {
+          // придумать как пропихнуть в каждый обьект в массиве айдишку, смотри консоль логи ниже
+          console.log(product);
+          console.log(Object.values(product));
+          return Object.values(product);
+        })
+      )
       .subscribe((products) => (this.products = products));
   }
+
+  public openProduct(id: any) {}
 }

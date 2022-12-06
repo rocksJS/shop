@@ -2,5 +2,6 @@
   <app-product
     *ngFor="let product of products"
     [product]="product"
+    (click)="openProduct(product)"
   ></app-product>
 </div>
